@@ -1,0 +1,33 @@
+# Video Transcriber Service Dependencies
+# 
+# ВАЖНО: Сначала установите T-one framework из GitHub:
+# git clone https://github.com/voicekit-team/T-one.git
+# cd T-one && pip install -e .
+
+# Core T-one framework (устанавливается отдельно)
+# tone
+
+# Web framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# Video processing
+yt-dlp>=2023.10.13
+moviepy>=1.0.3
+
+# Audio processing
+librosa>=0.10.1
+soundfile>=0.12.1
+
+# Data processing
+numpy>=1.24.0
+pathlib2>=2.3.7
+
+# Utilities
+python-dotenv>=1.0.0
+
+# System requirements:
+# - Python 3.8+
+# - FFmpeg (для обработки видео)
+# - Git (для клонирования T-one)
